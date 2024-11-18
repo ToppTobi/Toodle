@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
-  templateUrl: './user.component.html',
-  styleUrl: './user.component.css'
+  imports: [
+    FormsModule
+  ],
+  templateUrl: 'user.component.html',
+  styleUrl: 'user.component.css'
 })
 export class UserComponent {
+  newUserUserID: string = "";
+  newUserFirstName: string = "";
+  newUserLastName: string = "";
 
+
+  addUser() {
+
+  }
 }

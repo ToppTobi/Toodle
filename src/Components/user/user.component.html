@@ -1,1 +1,17 @@
-<p>user works!</p>
+<div>
+  <div>
+    <input type="text" class="input-field" placeholder="UserID" [(ngModel)]="newUserUserID">
+  </div>
+  <div>
+    <input type="text" class="input-field" placeholder="First Name" [(ngModel)]="newUserFirstName">
+  </div>
+  <div>
+    <input type="text" class="input-field" placeholder="Last Name" [(ngModel)]="newUserLastName">
+  </div>
+</div>
+
+<div>
+  <button
+    (click)="$event.preventDefault(); addUser()"
+  >Create a New User</button>
+</div>
